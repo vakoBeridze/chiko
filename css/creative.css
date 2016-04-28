@@ -494,3 +494,14 @@ body {
     width: 100%;
     position: absolute;
 }
+
+.en, .ge, .ru {
+    display: none;
+}
+
+/* hide all elements with a language class */
+.en:lang(en), .ge:lang(ge), .ru:lang(ru) {
+    display: block;
+}
+
+/* show those elements that match their language class */

@@ -69,3 +69,7 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 */
+
+function switchLanguage(languageCode) {
+    document.getElementsByTagName('html')[0].setAttribute('lang', languageCode || 'en');
+}
