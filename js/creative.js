@@ -73,3 +73,32 @@ google.maps.event.addDomListener(window, 'load', initialize);
 function switchLanguage(languageCode) {
     document.getElementsByTagName('html')[0].setAttribute('lang', languageCode || 'en');
 }
+
+function initMap() {
+    var latLng = new google.maps.LatLng(41.577926, 43.243083);
+    var mapOptions = {
+        center: latLng,
+        zoom: 14,
+        //mapTypeId: google.maps.MapTypeId.HYBRID,
+        scrollwheel: false,
+        //draggable: false,
+        panControl: true,
+        zoomControl: true,
+        mapTypeControl: true,
+        scaleControl: true,
+        streetViewControl: false,
+        overviewMapControl: true,
+        rotateControl: true
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    var marker = new google.maps.Marker({
+        position: latLng,
+        animation: google.maps.Animation.BOUNCE,
+        map: map
+        //label: 'vako',
+        //title: 'Hello World!',
+        //draggable:true,
+        //icon: "img/favicon.ico",
+    });
+
+}

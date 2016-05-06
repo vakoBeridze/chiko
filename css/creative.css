@@ -482,7 +482,7 @@ body {
 
 .map-responsive {
     overflow: hidden;
-    padding-bottom: 40%;
+    padding-bottom: 30%;
     position: relative;
     height: 0;
 }
@@ -490,9 +490,14 @@ body {
 .map-responsive iframe {
     left: 0;
     top: 0;
-    height: 50%;
+    height: 30%;
     width: 100%;
     position: absolute;
+}
+
+.footer {
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
 
 .en, .ge, .ru {
